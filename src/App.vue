@@ -12,7 +12,7 @@ import myFooter from './components/footer/index'
 export default {
   name: 'App',
   methods:{
-    list:[]
+    
   },
   components:{
     myHeader,

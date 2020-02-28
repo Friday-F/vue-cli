@@ -1,0 +1,15 @@
+<div class="comp-confirm-dialog" :id="CONFIRM_ELEMENT_ID" v-if="visible === true">
+    <div :class="['confirm-box',{'confirm-box-small':type==='small'}]">
+        <modal :title="title" :on-hide="hide" :width="type==='small'?350:540">
+            <div slot="content">
+                <i class="icon-info"></i>
+                <span class="text" v-html="content"></span>
+            </div>
+            <div slot="footer">
+                <a href="javascript:;" class="ui-btn ui-btn--default" @click="onCancel">{{cancelText}}</a>
+                <a href="javascript:;" class="ui-btn" @click="onConfirm">{{confirmText}}</a>
+            </div>
+        </modal>
+    </div>
+    
+</div>

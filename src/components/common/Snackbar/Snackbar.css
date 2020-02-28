@@ -1,0 +1,93 @@
+/**
+ * @file
+ * @auth ''
+ * @date 2017/1/9
+ */
+.comp-snackbar {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  border-radius: 2px;
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+  transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: background-color, color, opacity, transform;
+  min-width: 288px;
+  max-width: 568px;
+  min-height: 48px;
+  max-height: 80px;
+  z-index: 201;
+}
+.comp-snackbar.snackbar-enter,
+.comp-snackbar.snackbar-leave-active {
+  transform: translate3D(0, calc(100% + 32px), 0);
+}
+.comp-snackbar .snackbar-enter,
+.comp-snackbar .snackbar-leave-active {
+  opacity: 0;
+}
+.comp-snackbar .snackbar-enter .snackbar-wrapper,
+.comp-snackbar .snackbar-leave-active .snackbar-wrapper {
+  opacity: 0;
+}
+.comp-snackbar--info {
+  background-color: #2f3d45;
+}
+.comp-snackbar--success {
+  background-color: #00b07c;
+}
+.comp-snackbar--error {
+  background-color: #e96239;
+}
+.comp-snackbar--warning {
+  background-color: #E6A23C;
+}
+.comp-snackbar .snackbar-wrapper {
+  display: flex;
+  box-sizing: border-box;
+  padding: 8px 12px 8px 24px;
+  align-items: center;
+  color: #fff;
+  font-size: 14px;
+  transition: opacity 0.38s cubic-bezier(0.55, 0, 0.55, 0.2);
+}
+.comp-snackbar .snackbar-wrapper .content-icon {
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  color: #fff;
+}
+.comp-snackbar .snackbar-wrapper .content-text {
+  flex: 1;
+  margin-left: 12px;
+}
+.comp-snackbar .snackbar-wrapper .content-close {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin-left: 16px;
+  padding: 12px;
+  line-height: 1;
+  color: #fff;
+  border-radius: 50%;
+}
+.comp-snackbar .snackbar-wrapper .content-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.comp-snackbar .snackbar-wrapper .content-close .icon-close {
+  font-size: 18px;
+}
+.comp-snackbar.slide-fade-enter-active {
+  display: block;
+  opacity: 1;
+  z-index: 201;
+}
+@media screen and (max-width: 540px) {
+  .comp-snackbar {
+    left: 0;
+    right: 0;
+    width: 100%;
+    bottom: 0;
+    max-width: 100%;
+    border-radius: 0;
+  }
+}

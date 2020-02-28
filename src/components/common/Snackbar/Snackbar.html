@@ -1,0 +1,11 @@
+<div class="comp-snackbar" :class="['comp-snackbar--' + type]">
+    <div class="snackbar-wrapper">
+        <div class="content-icon">
+            <i :class="'icon-tip-' + type"></i>
+        </div>
+        <div class="content-text" v-html="content"></div>
+        <a href="javascript:;" class="content-close" @click="hide">
+            <i class="icon-close js-ripple"></i>
+        </a>
+    </div>
+</div>

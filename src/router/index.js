@@ -4,6 +4,7 @@ Vue.use(Router)
 
 export default new Router({
   linkActiveClass:'router-link-active',
+  mode:'history',
   routes: [
     {
       path: '/',

@@ -7,8 +7,8 @@ import './assets/css/index.css'
 import store from './store/index.js'
 
 Vue.config.productionTip = false
-import './components/common/Alert/Alert'
-import './components/common/Confirm/Confirm'
+import './components/common/Alert/Alert';
+import './components/common/Confirm/Confirm';
 import VueLocalStorage from 'vue-ls';
 Vue.use(VueLocalStorage);
 /* eslint-disable no-new */

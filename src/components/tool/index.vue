@@ -22,7 +22,7 @@ export default {
         }
     },
     created(){
-       this.getList()
+    //    this.getList()
        this.getTag()
     },
     methods:{

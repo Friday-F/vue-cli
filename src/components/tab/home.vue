@@ -74,6 +74,9 @@
       <li>
           <router-link to='/level'>二级路由</router-link>
       </li>
+      <li>
+          <router-link to='/input'>Input</router-link>
+      </li>
     </ul>
   </div>
 </template>

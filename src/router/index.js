@@ -174,6 +174,11 @@ export default new Router({
         component:(resolve)=>require(['@/components/table/index.vue'],resolve)
       },
       {
+        path:'/input',
+        name:'Input',
+        component:(resolve)=>require(['@/components/Input/index.vue'],resolve)
+      },
+      {
           path:'/level',
           name:'level',
           component:(resolve)=>require(['@/components/second/index'],resolve),

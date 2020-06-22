@@ -23,7 +23,7 @@ export default {
         }
     },
     created(){
-        this.getBannerList()
+        // this.getBannerList()
     },
     methods:{
         getBannerList(){

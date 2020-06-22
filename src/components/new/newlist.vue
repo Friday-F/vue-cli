@@ -41,7 +41,7 @@
       }
     },
     created() {
-      this.getinit()
+    //   this.getinit()
       this.loadData()
     },
     methods: {
